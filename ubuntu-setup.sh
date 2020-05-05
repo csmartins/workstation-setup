@@ -15,5 +15,6 @@ sudo apt install ./stremio.deb
 echo "+++++++++++++++++++++++++++ Now I'm gonna make this terminal awesome +++++++++++++++++++"
 sudo apt install -y git-core zsh tmux
 sudo sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-echo zsh >> ~/.bashrc
 echo tmux >> ~/.bashrc
+echo zsh >> ~/.bashrc
+echo clear >> ~/.bashrc
