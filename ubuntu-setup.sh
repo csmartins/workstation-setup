@@ -18,3 +18,6 @@ sudo sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.s
 echo tmux >> ~/.bashrc
 echo zsh >> ~/.bashrc
 echo clear >> ~/.bashrc
+
+echo "+++++++++++++++++++++++++++ Brilha +++++++++++++++++++++++++++++++++++++++++++++++++++++"
+gnome-terminal
