@@ -6,6 +6,10 @@ sudo apt update
 echo "+++++++++++++++++++++++++++ Installing some awesome tools for you, awesome developer +++"
 sudo apt install -y git curl google-chrome-stable pwgen
 sudo snap install --classic code
+sudo apt install software-properties-common python-software-properties
+sudo add-apt-repository ppa:pypa/ppa
+sudo apt update
+sudo apt install pipenv
 
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
