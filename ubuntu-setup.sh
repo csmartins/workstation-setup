@@ -10,7 +10,8 @@ sudo apt install software-properties-common python-software-properties
 sudo add-apt-repository ppa:pypa/ppa
 sudo apt update
 sudo apt install python3-pip
-sudo pip3 install pipenv
+pip3 install --user pipenv
+PATH="$PATH:$HOME/.local/bin"
 
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
