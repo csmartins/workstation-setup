@@ -9,7 +9,8 @@ sudo snap install --classic code
 sudo apt install software-properties-common python-software-properties
 sudo add-apt-repository ppa:pypa/ppa
 sudo apt update
-sudo apt install pipenv
+sudo apt install python3-pip
+sudo pip3 install pipenv
 
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
