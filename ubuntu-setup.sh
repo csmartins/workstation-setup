@@ -29,6 +29,9 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+PATH="$PATH:$HOME/.tfenv/bin
+
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
 wget -O stremio.deb https://dl.strem.io/linux/v4.4.106/stremio_4.4.106-1_amd64.deb
