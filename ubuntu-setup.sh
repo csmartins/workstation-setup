@@ -30,7 +30,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
-PATH="$PATH:$HOME/.tfenv/bin
+PATH="$PATH:$HOME/.tfenv/bin"
 
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
