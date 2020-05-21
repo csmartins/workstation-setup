@@ -11,7 +11,7 @@ sudo add-apt-repository ppa:pypa/ppa
 sudo apt update
 sudo apt install python3-pip
 pip3 install --user pipenv
-PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get install \
@@ -30,7 +30,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
-PATH="$PATH:$HOME/.tfenv/bin"
+export PATH="$PATH:$HOME/.tfenv/bin"
 
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
