@@ -32,6 +32,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 export PATH="$PATH:$HOME/.tfenv/bin"
 
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.0.16/android-studio-ide-193.6514223-linux.tar.gz
+tar -xfv android-studio.tar.gz -C /opt/
+
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
 wget -O stremio.deb https://dl.strem.io/linux/v4.4.106/stremio_4.4.106-1_amd64.deb
