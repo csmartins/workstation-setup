@@ -29,8 +29,12 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+echo "+++++++++++++++++++++++++++ Installing tfevn +++++++++++++++++++++++++++++++++++++++++++"
+
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 export PATH="$PATH:$HOME/.tfenv/bin"
+
+echo "+++++++++++++++++++++++++++ Installing Android Studio and Android development stuf +++++"
 
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.0.16/android-studio-ide-193.6514223-linux.tar.gz
