@@ -38,7 +38,7 @@ echo "+++++++++++++++++++++++++++ Installing Android Studio and Android developm
 
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.0.0.16/android-studio-ide-193.6514223-linux.tar.gz
-tar -xf android-studio.tar.gz -C /opt/
+sudo tar -xf android-studio.tar.gz -C /opt/
 
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
