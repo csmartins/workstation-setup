@@ -47,6 +47,9 @@ echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++
 sudo snap install vlc
 wget -O stremio.deb https://dl.strem.io/linux/v4.4.106/stremio_4.4.106-1_amd64.deb
 sudo apt install ./stremio.deb
+sudo add-apt-repository ppa:wireshark-dev/stable
+sudo apt-get update
+sudo apt-get install wireshark
 
 echo "+++++++++++++++++++++++++++ Making some base development setup +++++++++++++++++++++++++"
 mkdir -p ~/projects/challenges
