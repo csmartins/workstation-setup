@@ -33,6 +33,14 @@ echo "Installing docker"
 brew cask install docker
 echo "Finish installing docker"
 
+echo "Installing npm"
+brew install npm
+echo "Finish installing npm"
+
+echo "Installing hub"
+brew install hub
+echo "Finish installing hub"
+
 # skip this step if gcloud directory already exist
 echo "Installing gcloud sdk"
 curl https://sdk.cloud.google.com | bash
