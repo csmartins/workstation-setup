@@ -46,6 +46,7 @@ alias androidstudio=/opt/android-studio/bin/studio.sh
 
 wget https://services.gradle.org/distributions/gradle-6.4.1-bin.zip -P /tmp
 sudo unzip -d /opt/gradle /tmp/gradle-*.zip
+sudo touch /etc/profile.d/gradle.sh
 sudo echo "export GRADLE_HOME=/opt/gradle/gradle-6.4.1" >> /etc/profile.d/gradle.sh
 sudo echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >> /etc/profile.d/gradle.sh
 source /etc/profile.d/gradle.sh
