@@ -44,6 +44,12 @@ wget -O android-studio.tar.gz https://redirector.gvt1.com/edgedl/android/studio/
 sudo tar -xf android-studio.tar.gz -C /opt/
 alias androidstudio=/opt/android-studio/bin/studio.sh
 
+wget https://services.gradle.org/distributions/gradle-6.4.1-bin.zip -P /tmp
+sudo unzip -d /opt/gradle /tmp/gradle-*.zip
+sudo echo "export GRADLE_HOME=/opt/gradle/gradle-6.4.1" >> /etc/profile.d/gradle.sh
+sudo echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >> /etc/profile.d/gradle.sh
+source /etc/profile.d/gradle.sh
+
 echo "+++++++++++++++++++++++++++ Installing some additional cool things +++++++++++++++++++++"
 sudo snap install vlc
 wget -O stremio.deb https://dl.strem.io/linux/v4.4.106/stremio_4.4.106-1_amd64.deb
