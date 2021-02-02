@@ -4,8 +4,11 @@ echo "+++++++++++++++++++++++++++ Updating system for no surprises +++++++++++++
 sudo apt update
 
 echo "+++++++++++++++++++++++++++ Installing some awesome tools for you, awesome developer +++"
-sudo apt install -y git curl google-chrome-stable pwgen
+sudo apt install -y git curl pwgen
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo snap install --classic code
+sudo snap install slack --classic
 sudo apt install software-properties-common python-software-properties
 sudo add-apt-repository ppa:pypa/ppa
 sudo apt update
