@@ -9,13 +9,19 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo snap install --classic code
 sudo snap install slack --classic
+sudo snap install postman
+
+echo "+++++++++++++++++++++++++++ Installing some awesome pythonic tools +++++++++++++++++++++"
 sudo apt install software-properties-common python-software-properties
 sudo add-apt-repository ppa:pypa/ppa
 sudo apt update
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 pip3 install --user pipenv
 export PATH="$PATH:$HOME/.local/bin"
+curl https://pyenv.run | bash
+export PATH="$HOME/.pyenv/bin:$PATH"
 
+echo "+++++++++++++++++++++++++++ Installing some awesome docker tools +++++++++++++++++++++++"
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get install \
     apt-transport-https \
@@ -34,8 +40,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-
-sudo snap install postman
 
 echo "+++++++++++++++++++++++++++ Installing tfevn +++++++++++++++++++++++++++++++++++++++++++"
 
