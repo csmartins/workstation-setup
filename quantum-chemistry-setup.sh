@@ -30,3 +30,4 @@ sudo apt install -y tk libglu1-mesa libtogl2 libfftw3-3 libxmu6 imagemagick open
 wget -O xcrysden.tar.gz http://www.xcrysden.org/download/xcrysden-1.6.2-linux_x86_64-shared.tar.gz
 sudo tar -xzvf xcrysden.tar.gz -C /opt/
 echo "+++++++++++++++++++++++++++ Installing Xmgrace ++++++++++++++++++++++++++++++++++++++++"
+sudo apt-get install -y grace
