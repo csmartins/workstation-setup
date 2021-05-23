@@ -21,6 +21,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 
 echo "+++++++++++++++++++++++++++ Installing chemestry tools ++++++++++++++++++++++++++++++++"
 echo "+++++++++++++++++++++++++++ Installing Quantum Espresso 6.4 +++++++++++++++++++++++++++"
+sudo apt-get install gfortran
 wget -O q-e.tgz https://github.com/QEF/q-e/releases/download/qe-6.4/qe-6.4_release_pack.tgz
 sudo tar -xzvf q-e.tgz -C /opt/
 sudo /opt/qe_release_6.4/configure
