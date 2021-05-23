@@ -33,6 +33,7 @@ wget --no-check-certificate --no-cache --no-cookie -O - https://raw.githubuserco
 ### Features
 Aside from basic apps this setup comes with 
 
+- [Quantum Espresso 6.4](https://github.com/QEF/q-e/releases/tag/qe-6.4)
 - [Quantum Espresso 6.5](https://github.com/QEF/q-e/releases/tag/qe-6.5)
 - [Xcrysden 1.6.2](http://www.xcrysden.org/XCrySDen.html)
 - [Xmgrace](https://plasma-gate.weizmann.ac.il/Grace/)
