@@ -26,4 +26,7 @@ sudo tar -xzvf q-e.tgz -C /opt/
 sudo /opt/qe-6.5/configure
 sudo make -C /opt/qe-6.5/ all
 echo "+++++++++++++++++++++++++++ Installing Xcrysden +++++++++++++++++++++++++++++++++++++++"
+sudo apt install tk libglu1-mesa libtogl2 libfftw3-3 libxmu6 imagemagick openbabel libgfortran5
+wget -O xcrysden.tar.gz http://www.xcrysden.org/download/xcrysden-1.6.2-linux_x86_64-shared.tar.gz
+sudo tar -xzvf xcrysden.tar.gz -C /opt/
 echo "+++++++++++++++++++++++++++ Installing Xmgrace ++++++++++++++++++++++++++++++++++++++++"
